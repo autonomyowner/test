@@ -8,40 +8,61 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Modern Kitchen Color Palette
+        // Gold and Black Color Palette
         kitchen: {
           white: {
             clean: '#FFFFFF',
-            soft: '#F0F0F0',
+            soft: '#F8F8F8',
           },
           black: {
             deep: '#000000',
             soft: '#1A1A1A',
+            medium: '#2A2A2A',
+          },
+          gold: {
+            light: '#FFD700',
+            medium: '#FFC107',
+            dark: '#FF8F00',
+            deep: '#FF6F00',
+            accent: '#FFF8DC',
           },
           marble: {
-            gray: '#B0B0B0',
-            'gray-light': '#C8C8C8',
+            gray: '#666666',
+            'gray-light': '#888888',
           },
           warm: {
-            light: '#FFF7E6',
-            'light-soft': '#FFECD6',
+            light: '#FFF8DC',
+            'light-soft': '#FFEAA7',
           },
           footer: {
-            dark: '#1C4831',
+            dark: '#000000',
           },
           lux: {
-            'dark-green': {
-              50: '#f0f9f4',
-              100: '#dcf2e3',
-              200: '#bce5cc',
-              300: '#8dd1a8',
-              400: '#56b47d',
-              500: '#2d5a3d',
-              600: '#1e3d2a',
-              700: '#1a3324',
-              800: '#152a1e',
-              900: '#0f1f16',
-              950: '#0a1510',
+            gold: {
+              50: '#fffdf7',
+              100: '#fff9e6',
+              200: '#fff3cc',
+              300: '#ffecb3',
+              400: '#ffe082',
+              500: '#ffd54f',
+              600: '#ffc107',
+              700: '#ff8f00',
+              800: '#ff6f00',
+              900: '#e65100',
+              950: '#bf360c',
+            },
+            black: {
+              50: '#f8f9fa',
+              100: '#e9ecef',
+              200: '#dee2e6',
+              300: '#ced4da',
+              400: '#adb5bd',
+              500: '#6c757d',
+              600: '#495057',
+              700: '#343a40',
+              800: '#212529',
+              900: '#000000',
+              950: '#0a0a0a',
             }
           }
         },

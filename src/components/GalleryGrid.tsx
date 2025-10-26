@@ -161,7 +161,7 @@ export const GalleryGrid = (): JSX.Element => {
             key={item.id}
             type="button"
             onClick={() => handleImageClick(item)}
-            className="group relative overflow-hidden rounded-3xl border border-kitchen-lux-dark-green-200 bg-gradient-to-br from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 text-left shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-kitchen-lux-dark-green-200/20"
+            className="group relative overflow-hidden rounded-3xl border border-kitchen-gold-medium/30 bg-gradient-to-br from-kitchen-gold-accent to-kitchen-warm-light text-left shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-kitchen-gold-medium/20"
           >
             <div className="relative aspect-square bg-neutral-100 flex items-center justify-center">
               <div className="text-center text-neutral-400">
@@ -169,14 +169,14 @@ export const GalleryGrid = (): JSX.Element => {
                 <p className="text-lg">Image à venir</p>
               </div>
               <div className="absolute inset-x-0 bottom-0 flex flex-col gap-2 p-6">
-                <p className="text-xs uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600">
+                <p className="text-xs uppercase tracking-[0.3em] text-kitchen-gold-medium">
                   {item.category}
                 </p>
-                <p className="text-lg font-elegant font-semibold text-kitchen-lux-dark-green-800">
+                <p className="text-lg font-elegant font-semibold text-kitchen-black-deep">
                   {item.title}
                 </p>
-                <p className="text-sm text-kitchen-lux-dark-green-700">{item.description}</p>
-                <span className="mt-2 text-xs font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600 underline underline-offset-4 group-hover:text-kitchen-lux-dark-green-500 transition-colors duration-200">
+                <p className="text-sm text-kitchen-black-soft">{item.description}</p>
+                <span className="mt-2 text-xs font-semibold uppercase tracking-[0.3em] text-kitchen-gold-medium underline underline-offset-4 group-hover:text-kitchen-gold-dark transition-colors duration-200">
                   Voir le projet
                 </span>
               </div>

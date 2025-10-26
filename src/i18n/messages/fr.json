@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "title": "Allouani - Magasins de parfums d'exception à Saida, Ouargla, Oran, Alger",
+    "description": "Allouani dispose de 4 boutiques dans différentes wilayas et vous emmène dans un voyage de parfum et d'élégance. Découvrez notre collection d'essences rares, de musc, d'oud et de mélanges personnalisés avec livraison dans toutes les 58 wilayas.",
+    "keywords": "parfums, musc, oud, mélanges personnalisés, Saida, Ouargla, Oran, Alger, parfumerie, essences rares, consultation parfum, livraison 58 wilayas"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "services": "Services",
+    "contact": "Contact",
+    "tagline": "Parfums d'exception et mélanges personnalisés",
+    "openMenu": "Menu",
+    "closeMenu": "Fermer",
+    "toggleNavigation": "Basculer la navigation"
+  },
+  "hero": {
+    "subtitle": "Magasin de parfums d'exception",
+    "title": "Allouani vous emmène dans un voyage de parfum et d'élégance",
+    "description": "Découvrez notre collection d'essences rares, de musc, d'oud et de mélanges personnalisés.",
+    "contactButton": "Prendre contact",
+    "servicesButton": "Voir nos services",
+    "location": "4 boutiques : Saida, Ouargla, Oran, Alger - Livraison 58 wilayas",
+    "whatsappMessage": "Bonjour! Je suis intéressé(e) par vos services de parfumerie et consultation.",
+    "features": {
+      "customBlends": "Mélanges personnalisés",
+      "expertConsultation": "Consultation experte",
+      "premiumQuality": "Qualité premium"
+    }
+  },
+  "services": {
+    "subtitle": "Savoir-faire",
+    "title": "Des parfums soignés pour chaque personnalité",
+    "description": "Nous concevons des parfums sur mesure qui s'adaptent à votre style de vie et assurent une expérience sensorielle et esthétique au quotidien.",
+    "viewAllServices": "Voir tous les services",
+    "discoverService": "Découvrir le service",
+    "learnMore": "En savoir plus",
+    "premiumPerfumes": {
+      "title": "Parfums premium",
+      "description": "Collection exclusive de parfums rares et sophistiqués pour une élégance intemporelle.",
+      "highlight": "Élégance intemporelle"
+    },
+    "customBlends": {
+      "title": "Mélanges personnalisés",
+      "description": "Création de parfums uniques selon vos préférences avec nos experts parfumeurs.",
+      "highlight": "Créativité unique"
+    },
+    "musk": {
+      "title": "Musc",
+      "description": "Musc naturel de qualité exceptionnelle pour des parfums chauds et sensuels.",
+      "highlight": "Qualité exceptionnelle"
+    },
+    "oud": {
+      "title": "Oud",
+      "description": "Oud authentique et rare pour des compositions parfumées d'une richesse incomparable.",
+      "highlight": "Richesse incomparable"
+    },
+    "consultation": {
+      "title": "Consultation experte",
+      "description": "Conseils personnalisés pour choisir le parfum parfait qui reflète votre personnalité unique.",
+      "highlight": "Conseils personnalisés"
+    },
+    "giftPackaging": {
+      "title": "Emballage cadeau",
+      "description": "Présentation luxueuse et élégante pour offrir vos parfums préférés en toute beauté.",
+      "highlight": "Présentation luxueuse"
+    }
+  },
+  "servicesList": {
+    "premiumPerfumes": {
+      "title": "Parfums premium",
+      "description": "Collection exclusive de parfums rares et sophistiqués pour une élégance intemporelle et une distinction personnelle.",
+      "features": [
+        "Sélection de parfums rares et exclusifs",
+        "Essences naturelles de qualité supérieure",
+        "Compositions parfumées sophistiquées",
+        "Consultation personnalisée pour le choix",
+        "Garantie d'authenticité et de qualité"
+      ],
+      "signature": "Élégance intemporelle"
+    },
+    "customBlends": {
+      "title": "Mélanges personnalisés",
+      "description": "Création de parfums uniques selon vos préférences avec nos experts parfumeurs pour une signature olfactive exclusive.",
+      "features": [
+        "Consultation avec nos parfumeurs experts",
+        "Création de mélanges sur mesure",
+        "Essences rares et naturelles",
+        "Tests et ajustements personnalisés",
+        "Flacon personnalisé avec votre nom"
+      ],
+      "signature": "Créativité unique"
+    },
+    "musk": {
+      "title": "Musc",
+      "description": "Musc naturel de qualité exceptionnelle pour des parfums chauds, sensuels et envoûtants.",
+      "features": [
+        "Musc naturel authentique",
+        "Qualité premium certifiée",
+        "Parfums chauds et sensuels",
+        "Longévité exceptionnelle",
+        "Origine traçable et garantie"
+      ],
+      "signature": "Qualité exceptionnelle"
+    },
+    "oud": {
+      "title": "Oud",
+      "description": "Oud authentique et rare pour des compositions parfumées d'une richesse et d'une profondeur incomparables.",
+      "features": [
+        "Oud authentique de qualité supérieure",
+        "Origine certifiée et traçable",
+        "Compositions riches et complexes",
+        "Parfums d'exception et rares",
+        "Consultation experte incluse"
+      ],
+      "signature": "Richesse incomparable"
+    },
+    "consultation": {
+      "title": "Consultation experte",
+      "description": "Conseils personnalisés et expertise pour choisir le parfum parfait qui reflète votre personnalité unique.",
+      "features": [
+        "Analyse de votre profil olfactif",
+        "Recommandations personnalisées",
+        "Tests de parfums guidés",
+        "Conseils d'application et conservation",
+        "Suivi et ajustements si nécessaire"
+      ],
+      "signature": "Conseils personnalisés"
+    },
+    "giftPackaging": {
+      "title": "Emballage cadeau",
+      "description": "Présentation luxueuse et élégante pour offrir vos parfums préférés avec style et raffinement.",
+      "features": [
+        "Emballage luxueux personnalisé",
+        "Boîtes cadeau élégantes",
+        "Ribbons et finitions raffinées",
+        "Cartes de vœux personnalisées",
+        "Service d'emballage professionnel"
+      ],
+      "signature": "Présentation luxueuse"
+    },
+    "includedInService": "Compris dans la prestation",
+    "requestQuote": "Demander un devis"
+  },
+  "cta": {
+    "subtitle": "Prêt à découvrir",
+    "title": "Imaginons ensemble votre parfum idéal",
+    "description": "Partagez vos envies et préférences, nous nous chargeons de vous conseiller le parfum parfait qui reflète votre personnalité et votre style unique.",
+    "requestQuote": "Demander un devis",
+    "whatsapp": "WhatsApp",
+    "phone": "Téléphone",
+    "email": "Email",
+    "callNow": "Appeler maintenant",
+    "available": "Disponibles 7j/7 pour vos projets"
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "title": "Discutons de vos préférences parfumées",
+    "description": "Partagez vos envies, contraintes et inspirations. Nous reviendrons vers vous rapidement avec des recommandations personnalisées et un service adapté à vos besoins.",
+    "whatsappMessage": "Bonjour! Je suis intéressé(e) par vos services de parfumerie et consultation.",
+    "coordinates": "Coordonnées",
+    "exchangeWithTeam": "Échanger avec notre équipe",
+    "teamDescription": "Nous sommes disponibles pour discuter de votre projet de parfumerie, définir un budget et planifier les prochaines étapes de conception et fabrication.",
+    "whatsapp": "WhatsApp",
+    "phone": "Téléphone",
+    "email": "Email",
+    "whatsappDescription": "Réponse rapide et partage de conseils personnalisés.",
+    "phoneDescription": "Pour un devis rapide ou un suivi de commande.",
+    "emailDescription": "Pour partager vos préférences et documents.",
+    "openWhatsApp": "Ouvrir WhatsApp",
+    "call": "Appeler",
+    "writeMessage": "Écrire un message",
+    "schedule": "Horaires : lundi à samedi 9h - 18h • Dimanche sur rendez-vous",
+    "whatsappAria": "Ouvrir WhatsApp pour nous contacter"
+  },
+  "about": {
+    "subtitle": "À propos",
+    "title": "L'équipe Allouani maîtrise l'art de la parfumerie moderne",
+    "description": "Avec 4 boutiques à Saida, Ouargla, Oran et Alger, Allouani conçoit et fabrique des parfums sur mesure avec un savoir-faire artisanal et des matières premières de qualité. Nous transformons votre expérience parfumée grâce à notre expertise et notre attention aux détails.",
+    "ourHistory": "Notre histoire",
+    "historyDescription": "Depuis plus de cinq ans, nous concevons et fabriquons des parfums sur mesure avec un savoir-faire artisanal et une grande exigence qualitative.",
+    "ourPromise": "Notre promesse",
+    "promiseDescription": "Offrir des parfums fonctionnels et esthétiques, de la conception à la fabrication finale, pour une expérience sans stress et parfaitement orchestrée.",
+    "kitchens": "Parfums",
+    "years": "Années",
+    "qualifiedArtisans": "Artisans qualifiés",
+    "manufacturingWorkshop": "Atelier de fabrication",
+    "workshopDescription": "Matières nobles et fabrication sur mesure pour chaque parfum.",
+    "teamComingSoon": "Équipe à venir"
+  },
+  "location": {
+    "serviceArea": "Zone de service",
+    "serviceDescription": "Nous disposons de 4 boutiques dans différentes wilayas et assurons la livraison dans toutes les 58 wilayas d'Algérie. Contactez-nous pour connaître les frais de livraison selon votre localisation.",
+    "allWilayas": "Livraison dans toutes les 58 wilayas",
+    "algiersRegion": "Boutique Alger",
+    "oranRegion": "Boutique Oran",
+    "constantineRegion": "Boutique Saida",
+    "annabaRegion": "Boutique Ouargla",
+    "otherWilayas": "Autres wilayas sur demande",
+    "travelFees": "Frais de livraison selon la distance",
+    "ourLocations": "Nos boutiques",
+    "locationsDescription": "Nous disposons de 4 boutiques pour mieux vous servir",
+    "bouzareah": "Saida",
+    "larbaa": "Ouargla",
+    "accessibility": "Accessibilité",
+    "accessibilityDescription": "Accès facile en voiture aux 4 boutiques, possibilité de parking sur demande.",
+    "coverage": "Couverture",
+    "coverageDescription": "Livraison dans toutes les 58 wilayas d'Algérie avec frais de livraison selon la distance.",
+    "practicalInfo": "Informations pratiques",
+    "appointments": "Rendez-vous",
+    "appointmentsDescription": "Possibilité de rendez-vous sur site pour comprendre vos besoins et prendre les mesures nécessaires.",
+    "installation": "Installation",
+    "installationDescription": "Équipe dédiée pour installer et démonter les éléments de décoration, avec respect des contraintes horaires.",
+    "emergencies": "Urgences",
+    "emergenciesDescription": "Pour les demandes de dernière minute, privilégiez WhatsApp pour obtenir une réponse rapide."
+  },
+  "gallery": {
+    "subtitle": "Galerie",
+    "title": "Découvrez notre univers parfumé",
+    "description": "Explorez notre collection d'images et vidéos qui capturent l'essence de notre savoir-faire en parfumerie.",
+    "videoFallback": "Votre navigateur ne supporte pas la lecture vidéo.",
+    "stats": {
+      "events": {
+        "value": "500+",
+        "label": "Événements"
+      },
+      "years": {
+        "value": "5+",
+        "label": "Années d'expérience"
+      },
+      "team": {
+        "value": "10+",
+        "label": "Experts"
+      }
+    }
+  },
+  "footer": {
+    "madeBy": "Fait par"
+  }
+}

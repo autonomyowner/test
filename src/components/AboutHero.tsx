@@ -1,5 +1,13 @@
 
+'use client'
+
+import { useParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+
 export const AboutHero = (): JSX.Element => {
+  const params = useParams()
+  const locale = params.locale as string
+  const t = useTranslations('about')
   return (
     <section className="px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
@@ -7,36 +15,31 @@ export const AboutHero = (): JSX.Element => {
           <div className="space-y-8">
             <div>
               <p className="text-xs uppercase tracking-[0.4em] text-neutral-500">
-                A propos
+                {t('subtitle')}
               </p>
               <h1 className="mt-5 text-4xl font-elegant font-semibold text-neutral-900 sm:text-5xl">
-                L equipe Cuisine Alger maitrise l art de la menuiserie moderne
+                {t('title')}
               </h1>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Basee a Bouzareah, Cuisine Alger concoit et fabrique des cuisines sur mesure
-                avec un savoir-faire artisanal et des materiaux de qualite. Nous transformons
-                vos espaces grace a notre expertise en menuiserie et notre attention aux details.
+                {t('description')}
               </p>
             </div>
 
             <div className="grid gap-8">
               <div>
                 <h2 className="text-lg font-semibold text-neutral-900">
-                  Notre histoire
+                  {t('ourHistory')}
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">
-                  Depuis plus de cinq ans, nous concevons et fabriquons des cuisines
-                  sur mesure avec un savoir-faire artisanal et une grande exigence qualitative.
+                  {t('historyDescription')}
                 </p>
               </div>
               <div>
                 <h2 className="text-lg font-semibold text-neutral-900">
-                  Notre promesse
+                  {t('ourPromise')}
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">
-                  Offrir des cuisines fonctionnelles et esthetiques, de la conception 3D
-                  a l installation finale, pour une experience sans stress et
-                  parfaitement orchestree.
+                  {t('promiseDescription')}
                 </p>
               </div>
             </div>
@@ -47,7 +50,7 @@ export const AboutHero = (): JSX.Element => {
                   50+
                 </p>
                 <p className="mt-1 text-xs uppercase tracking-[0.35em] text-neutral-500">
-                  Cuisines
+                  {t('kitchens')}
                 </p>
               </div>
               <div>
@@ -55,15 +58,15 @@ export const AboutHero = (): JSX.Element => {
                   5+
                 </p>
                 <p className="mt-1 text-xs uppercase tracking-[0.35em] text-neutral-500">
-                  Annees
+                  {t('years')}
                 </p>
               </div>
               <div>
                 <p className="text-3xl font-elegant font-semibold text-neutral-900">
-                  Artisans
+                  {t('qualifiedArtisans')}
                 </p>
                 <p className="mt-1 text-xs uppercase tracking-[0.35em] text-neutral-500">
-                  Qualifies
+                  {t('qualifiedArtisans')}
                 </p>
               </div>
             </div>
@@ -74,16 +77,16 @@ export const AboutHero = (): JSX.Element => {
               <div className="relative aspect-[4/5] bg-neutral-100 flex items-center justify-center">
                 <div className="text-center text-neutral-400">
                   <div className="text-6xl mb-4">👥</div>
-                  <p className="text-lg">Équipe à venir</p>
+                  <p className="text-lg">{t('teamComingSoon')}</p>
                 </div>
               </div>
             </div>
             <div className="absolute -bottom-8 left-1/2 w-60 -translate-x-1/2 rounded-3xl border border-neutral-200 bg-white/95 px-6 py-5 text-center shadow-lg">
               <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">
-                Atelier de fabrication
+                {t('manufacturingWorkshop')}
               </p>
               <p className="mt-3 text-sm text-neutral-600">
-                Materiaux nobles et fabrication sur mesure pour chaque cuisine.
+                {t('workshopDescription')}
               </p>
             </div>
           </div>

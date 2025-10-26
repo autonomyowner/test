@@ -1,5 +1,9 @@
+﻿"use client"
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 type ServiceCard = {
   id: string
@@ -10,101 +14,111 @@ type ServiceCard = {
   href: string
 }
 
-const services: ServiceCard[] = [
-  {
-    id: 'cuisine-moderne',
-    title: 'Cuisine moderne',
-    description:
-      'Design contemporain aux lignes epurees avec materiaux haut de gamme pour une cuisine fonctionnelle.',
-    highlight: 'Design contemporain',
-    image: '/picturs/3.jpg',
-    href: '/services#cuisine-moderne',
-  },
-  {
-    id: 'cuisine-classique',
-    title: 'Cuisine classique',
-    description:
-      'Style intemporel avec bois noble et finitions raffinees pour une cuisine chaleureuse et traditionnelle.',
-    highlight: 'Tradition et qualite',
-    image: '/picturs/7.jpg',
-    href: '/services#cuisine-classique',
-  },
-  {
-    id: 'renovation-complete',
-    title: 'Renovation complete',
-    description:
-      'Transformation totale de votre cuisine, de la demolition a la finition, pour un resultat cles en main.',
-    highlight: 'Renovation cles en main',
-    image: '/picturs/2.jpg',
-    href: '/services#renovation-complete',
-  },
-]
-
 export const ServicesPreview = (): JSX.Element => {
+  const params = useParams()
+  const locale = params.locale as string
+  const t = useTranslations('services')
+
+  const services: ServiceCard[] = [
+    {
+      id: 'premium-perfumes',
+      title: t('premiumPerfumes.title'),
+      description: t('premiumPerfumes.description'),
+      highlight: t('premiumPerfumes.highlight'),
+      image: '/picturs/productupcoming (1).png',
+      href: `/${locale}/services#premium-perfumes`,
+    },
+    {
+      id: 'custom-blends',
+      title: t('customBlends.title'),
+      description: t('customBlends.description'),
+      highlight: t('customBlends.highlight'),
+      image: '/picturs/productupcoming (2).png',
+      href: `/${locale}/services#custom-blends`,
+    },
+    {
+      id: 'musk',
+      title: t('musk.title'),
+      description: t('musk.description'),
+      highlight: t('musk.highlight'),
+      image: '/picturs/productupcoming (1).png',
+      href: `/${locale}/services#musk`,
+    },
+    {
+      id: 'oud',
+      title: t('oud.title'),
+      description: t('oud.description'),
+      highlight: t('oud.highlight'),
+      image: '/picturs/productupcoming (2).png',
+      href: `/${locale}/services#oud`,
+    },
+    {
+      id: 'consultation',
+      title: t('consultation.title'),
+      description: t('consultation.description'),
+      highlight: t('consultation.highlight'),
+      image: '/picturs/productupcoming (1).png',
+      href: `/${locale}/services#consultation`,
+    },
+    {
+      id: 'gift-packaging',
+      title: t('giftPackaging.title'),
+      description: t('giftPackaging.description'),
+      highlight: t('giftPackaging.highlight'),
+      image: '/picturs/productupcoming (2).png',
+      href: `/${locale}/services#gift-packaging`,
+    },
+  ]
+
   return (
     <section className="px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-kitchen-lux-dark-green-600">
-            Savoir faire
+            {t('subtitle')}
           </p>
           <h2 className="mt-5 text-4xl font-elegant font-semibold text-kitchen-lux-dark-green-800 sm:text-5xl">
-            Des cuisines soignees pour chaque style
+            {t('title')}
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-kitchen-lux-dark-green-700">
-            Nous concevons des cuisines sur mesure qui s adaptent a votre style de vie
-            et assurent une experience fonctionnelle et esthetique au quotidien.
+            {t('description')}
           </p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
+          {services.map(service => (
             <Link
               key={service.id}
               href={service.href}
-              className="group relative block overflow-hidden rounded-3xl border border-kitchen-lux-dark-green-200 bg-gradient-to-br from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-kitchen-lux-dark-green-200/20"
+              className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100 flex items-center justify-center">
-                {service.image ? (
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="text-center text-neutral-400">
-                    <div className="text-4xl mb-2">📸</div>
-                    <p className="text-sm">Image à venir</p>
-                  </div>
-                )}
-              </div>
-
-              <div className="flex h-full flex-col gap-5 p-6">
-                <span className="text-xs uppercase tracking-[0.35em] text-kitchen-lux-dark-green-600">
-                  {service.highlight}
-                </span>
-                <h3 className="text-2xl font-elegant font-semibold text-kitchen-lux-dark-green-800">
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={400}
+                height={300}
+                className="h-64 w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-xl font-semibold text-white">
                   {service.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-kitchen-lux-dark-green-700">
+                <p className="mt-2 text-sm text-white/90 line-clamp-2">
                   {service.description}
                 </p>
-                <span className="text-sm font-semibold uppercase tracking-[0.25em] text-kitchen-lux-dark-green-800 group-hover:text-kitchen-lux-dark-green-600 transition-colors duration-200">
-                  Decouvrir le service
-                </span>
+                <p className="mt-4 text-sm font-semibold text-kitchen-gold-light">
+                  {service.highlight}
+                </p>
+                <div className="mt-4 inline-flex items-center text-sm font-medium text-kitchen-gold-light group-hover:text-white transition-colors duration-200">
+                  {t('learnMore')}
+                  <svg className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
             </Link>
           ))}
-        </div>
-
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/services"
-            className="inline-flex rounded-full border border-kitchen-lux-dark-green-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-lux-dark-green-700 transition-colors duration-200 hover:border-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 hover:bg-kitchen-lux-dark-green-50"
-          >
-            Voir tous les services
-          </Link>
         </div>
       </div>
     </section>

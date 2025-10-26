@@ -1,7 +1,7 @@
 {
-  "name": "cuisine-alger",
+  "name": "allouani",
   "version": "1.0.0",
-  "description": "Cuisine Alger - Décoration événementielle à Bouzareah",
+  "description": "Allouani - Magasin de parfums d'exception à Bouzareah",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^15.4.5",
+    "next": "^15.5.6",
+    "next-intl": "^4.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -19,8 +20,8 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.4.5",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "^15.5.6",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"

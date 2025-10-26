@@ -2,7 +2,7 @@
 
 export const PricingSection = (): JSX.Element => {
   const handleContactClick = (): void => {
-    const phoneNumber = '+213776797904'
+    const phoneNumber = '+213 671 38 91 13'
     const message =
       'Bonjour! Je souhaite obtenir un devis pour vos services de decoration evennementielle.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -59,20 +59,20 @@ export const PricingSection = (): JSX.Element => {
         ].map((offer) => (
           <div
             key={offer.title}
-            className="flex flex-col rounded-3xl border border-kitchen-lux-dark-green-200 bg-gradient-to-br from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 px-6 py-8 text-left shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-kitchen-lux-dark-green-200/20"
+            className="flex flex-col rounded-3xl border border-kitchen-gold-medium/30 bg-gradient-to-br from-kitchen-gold-accent to-kitchen-warm-light px-6 py-8 text-left shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-kitchen-gold-medium/20"
           >
-            <h3 className="text-xl font-semibold text-kitchen-lux-dark-green-800">
+            <h3 className="text-xl font-semibold text-kitchen-black-deep">
               {offer.title}
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-kitchen-lux-dark-green-700">
+            <p className="mt-3 text-sm leading-relaxed text-kitchen-black-soft">
               {offer.description}
             </p>
-            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm text-kitchen-lux-dark-green-700">
+            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm text-kitchen-black-soft">
               {offer.points.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600">
+            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-kitchen-gold-medium">
               Sur devis
             </p>
           </div>
@@ -80,17 +80,17 @@ export const PricingSection = (): JSX.Element => {
       </div>
 
       <div className="mt-16 text-center">
-        <h3 className="text-2xl font-elegant font-semibold text-kitchen-lux-dark-green-800">
+        <h3 className="text-2xl font-elegant font-semibold text-kitchen-black-deep">
           Parlons de votre projet
         </h3>
-        <p className="mt-4 text-sm leading-relaxed text-kitchen-lux-dark-green-700">
+        <p className="mt-4 text-sm leading-relaxed text-kitchen-black-soft">
           Nous ecoutons vos attentes, selectionnons les meilleurs prestataires
           et composons une proposition detaillee pour garantir un rendu
           harmonieux.
         </p>
         <button
           onClick={handleContactClick}
-          className="mt-7 rounded-full bg-kitchen-lux-dark-green-800 px-10 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-white transition-colors duration-200 hover:bg-kitchen-lux-dark-green-700"
+          className="mt-7 rounded-full bg-kitchen-black-deep px-10 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-gold-light transition-colors duration-200 hover:bg-kitchen-black-soft"
           type="button"
         >
           Demander un devis

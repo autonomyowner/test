@@ -1,5 +1,9 @@
 
+"use client"
+
 import Image from 'next/image'
+import { useParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 type Service = {
   id: string
@@ -10,100 +14,100 @@ type Service = {
   signature: string
 }
 
-const services: Service[] = [
-  {
-    id: 'cuisine-moderne',
-    title: 'Cuisine moderne',
-    description:
-      'Design contemporain aux lignes epurees avec des materiaux haut de gamme pour une cuisine fonctionnelle et esthetique.',
-    features: [
-      'Conception 3D et plans detailles',
-      'Materiaux premium (lacquer, melamine, bois massif)',
-      'Electromenager integre et dissimule',
-      'Eclairage LED integre et ambiant',
-      'Installation complete par nos equipes',
-    ],
-    image: '/picturs/3.jpg',
-    signature: 'Design contemporain',
-  },
-  {
-    id: 'cuisine-classique',
-    title: 'Cuisine classique',
-    description:
-      'Style intemporel avec bois noble et finitions raffinees pour une cuisine chaleureuse et traditionnelle.',
-    features: [
-      'Bois massif et placage de qualite',
-      'Finitions traditionnelles (vernis, cire, patine)',
-      'Poignees et accessoires de style',
-      'Plans de travail en granit ou marbre',
-      'Fabrication artisanale sur mesure',
-    ],
-    image: '/picturs/7.jpg',
-    signature: 'Tradition et qualite',
-  },
-  {
-    id: 'amenagement-sur-mesure',
-    title: 'Amenagement sur mesure',
-    description:
-      'Optimisation maximale de l espace avec des solutions personnalisees adaptees a vos contraintes et besoins.',
-    features: [
-      'Etude ergonomique de l espace',
-      'Solutions de rangement optimisees',
-      'Adaptation aux contraintes architecturales',
-      'Integration d ilots et peninsules',
-      'Conception modulaire et evolutive',
-    ],
-    image: '/picturs/9.jpg',
-    signature: 'Optimisation espace',
-  },
-  {
-    id: 'plans-de-travail',
-    title: 'Plans de travail',
-    description:
-      'Granit, quartz, marbre ou stratifie pour des plans de travail durables et esthetiques adaptes a votre style.',
-    features: [
-      'Granit naturel et quartz composite',
-      'Marbre et pierres naturelles',
-      'Stratifie haute pression',
-      'Decoupe et usinage precis',
-      'Pose et finition professionnelle',
-    ],
-    image: '/picturs/7.jpg',
-    signature: 'Materiaux nobles',
-  },
-  {
-    id: 'menuiserie',
-    title: 'Menuiserie',
-    description:
-      'Placards, rangements et ilots centraux fabriques sur mesure pour maximiser l espace et l organisation.',
-    features: [
-      'Placards hauts et bas sur mesure',
-      'Ilots centraux et peninsules',
-      'Rangements specifiques (epices, vaisselle)',
-      'Tiroirs et portes a fermeture douce',
-      'Fabrication locale et garantie',
-    ],
-    image: '/picturs/10.jpg',
-    signature: 'Menuiserie d art',
-  },
-  {
-    id: 'renovation-complete',
-    title: 'Renovation complete',
-    description:
-      'Transformation totale de votre cuisine, de la demolition a la finition, pour un resultat cles en main.',
-    features: [
-      'Demolition et preparation des murs',
-      'Plomberie et electricite',
-      'Pose de carrelage et peinture',
-      'Installation complete de la cuisine',
-      'Suivi et garantie de finition',
-    ],
-    image: '/picturs/2.jpg',
-    signature: 'Renovation cles en main',
-  },
-]
+// This will be moved inside the component to use translations
 
 export const ServicesList = (): JSX.Element => {
+  const params = useParams()
+  const locale = params.locale as string
+  const t = useTranslations('servicesList')
+
+  const services: Service[] = [
+    {
+      id: 'premium-perfumes',
+      title: t('premiumPerfumes.title'),
+      description: t('premiumPerfumes.description'),
+      features: [
+        t('premiumPerfumes.features.0'),
+        t('premiumPerfumes.features.1'),
+        t('premiumPerfumes.features.2'),
+        t('premiumPerfumes.features.3'),
+        t('premiumPerfumes.features.4'),
+      ],
+      image: '/picturs/productupcoming (1).png',
+      signature: t('premiumPerfumes.signature'),
+    },
+    {
+      id: 'custom-blends',
+      title: t('customBlends.title'),
+      description: t('customBlends.description'),
+      features: [
+        t('customBlends.features.0'),
+        t('customBlends.features.1'),
+        t('customBlends.features.2'),
+        t('customBlends.features.3'),
+        t('customBlends.features.4'),
+      ],
+      image: '/picturs/productupcoming (2).png',
+      signature: t('customBlends.signature'),
+    },
+    {
+      id: 'musk',
+      title: t('musk.title'),
+      description: t('musk.description'),
+      features: [
+        t('musk.features.0'),
+        t('musk.features.1'),
+        t('musk.features.2'),
+        t('musk.features.3'),
+        t('musk.features.4'),
+      ],
+      image: '/picturs/productupcoming (1).png',
+      signature: t('musk.signature'),
+    },
+    {
+      id: 'oud',
+      title: t('oud.title'),
+      description: t('oud.description'),
+      features: [
+        t('oud.features.0'),
+        t('oud.features.1'),
+        t('oud.features.2'),
+        t('oud.features.3'),
+        t('oud.features.4'),
+      ],
+      image: '/picturs/productupcoming (2).png',
+      signature: t('oud.signature'),
+    },
+    {
+      id: 'consultation',
+      title: t('consultation.title'),
+      description: t('consultation.description'),
+      features: [
+        t('consultation.features.0'),
+        t('consultation.features.1'),
+        t('consultation.features.2'),
+        t('consultation.features.3'),
+        t('consultation.features.4'),
+      ],
+      image: '/picturs/productupcoming (1).png',
+      signature: t('consultation.signature'),
+    },
+    {
+      id: 'gift-packaging',
+      title: t('giftPackaging.title'),
+      description: t('giftPackaging.description'),
+      features: [
+        t('giftPackaging.features.0'),
+        t('giftPackaging.features.1'),
+        t('giftPackaging.features.2'),
+        t('giftPackaging.features.3'),
+        t('giftPackaging.features.4'),
+      ],
+      image: '/picturs/productupcoming (2).png',
+      signature: t('giftPackaging.signature'),
+    },
+  ]
+
   return (
     <div className="space-y-20">
       {services.map((service, index) => {
@@ -115,7 +119,7 @@ export const ServicesList = (): JSX.Element => {
             className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2"
           >
             <div
-              className={`relative overflow-hidden rounded-[32px] border border-kitchen-lux-dark-green-200 bg-gradient-to-br from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-kitchen-lux-dark-green-200/20 ${
+              className={`relative overflow-hidden rounded-[32px] border border-kitchen-gold-medium/30 bg-gradient-to-br from-kitchen-gold-accent to-kitchen-warm-light shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-kitchen-gold-medium/20 ${
                 isReversed ? 'lg:order-2' : ''
               }`}
             >
@@ -135,30 +139,30 @@ export const ServicesList = (): JSX.Element => {
               )}
             </div>
             <div className="flex items-center justify-between px-6 py-5">
-              <span className="text-xs uppercase tracking-[0.35em] text-kitchen-lux-dark-green-600">
+              <span className="text-xs uppercase tracking-[0.35em] text-kitchen-black-deep">
                 {service.signature}
               </span>
-              <span className="text-xs uppercase tracking-[0.35em] text-kitchen-lux-dark-green-500">
-                Cuisine Alger
+              <span className="text-xs uppercase tracking-[0.35em] text-kitchen-gold-medium">
+                Allouani
               </span>
             </div>
             </div>
 
             <div className={`space-y-6 ${isReversed ? 'lg:order-1' : ''}`}>
             <div>
-              <h2 className="text-3xl font-elegant font-semibold text-kitchen-lux-dark-green-800">
+              <h2 className="text-3xl font-elegant font-semibold text-kitchen-black-deep">
                 {service.title}
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-kitchen-lux-dark-green-700">
+              <p className="mt-4 text-sm leading-relaxed text-kitchen-black-soft">
                 {service.description}
               </p>
             </div>
 
             <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600">
-                Compris dans la prestation
+              <p className="text-xs uppercase tracking-[0.3em] text-kitchen-gold-medium">
+                {t('includedInService')}
               </p>
-              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-kitchen-lux-dark-green-700">
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-kitchen-black-soft">
                 {service.features.map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}
@@ -168,9 +172,9 @@ export const ServicesList = (): JSX.Element => {
             <div>
               <button
                 type="button"
-                className="rounded-full border border-kitchen-lux-dark-green-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-lux-dark-green-700 transition-colors duration-200 hover:border-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 hover:bg-kitchen-lux-dark-green-50"
+                className="rounded-full border border-kitchen-gold-medium px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-gold-medium transition-colors duration-200 hover:border-kitchen-gold-dark hover:text-kitchen-gold-dark hover:bg-kitchen-gold-accent"
               >
-                Demander un devis
+                {t('requestQuote')}
               </button>
             </div>
             </div>

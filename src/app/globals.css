@@ -6,21 +6,27 @@
 
 :root {
   color-scheme: light;
-  /* Modern Kitchen Color Palette */
+  /* Gold and Black Color Palette */
   --white-clean: #FFFFFF;
-  --white-soft: #F0F0F0;
+  --white-soft: #F8F8F8;
   --black-deep: #000000;
   --black-soft: #1A1A1A;
-  --marble-gray: #B0B0B0;
-  --marble-gray-light: #C8C8C8;
-  --warm-light: #FFF7E6;
-  --warm-light-soft: #FFECD6;
-  --footer-dark: #1C4831;
+  --black-medium: #2A2A2A;
+  --gold-light: #FFD700;
+  --gold-medium: #FFC107;
+  --gold-dark: #FF8F00;
+  --gold-deep: #FF6F00;
+  --gold-accent: #FFF8DC;
+  --marble-gray: #666666;
+  --marble-gray-light: #888888;
+  --warm-light: #FFF8DC;
+  --warm-light-soft: #FFEAA7;
+  --footer-dark: #000000;
   
   /* Legacy variables for compatibility */
-  --page-bg-start: var(--white-clean);
+  --page-bg-start: var(--gold-accent);
   --page-bg-end: var(--white-soft);
-  --page-foreground: 26, 26, 26;
+  --page-foreground: 0, 0, 0;
 }
 
 * {
@@ -50,12 +56,12 @@ a {
 
 /* Custom gradient utility */
 .bg-gradient-elegant {
-  background: linear-gradient(145deg, var(--white-clean), var(--white-soft));
+  background: linear-gradient(145deg, var(--gold-accent), var(--white-soft));
 }
 
 /* Modern kitchen gradient */
 .bg-gradient-kitchen {
-  background: linear-gradient(135deg, var(--white-clean), var(--warm-light));
+  background: linear-gradient(135deg, var(--gold-accent), var(--warm-light));
 }
 
 /* Smooth scrolling */
@@ -73,10 +79,115 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--marble-gray);
+  background: var(--gold-medium);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--black-soft);
-} 
+  background: var(--gold-dark);
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: unset;
+  margin-left: auto;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: unset;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: unset;
+  padding-left: 1rem;
+}
+
+[dir="rtl"] .border-l {
+  border-left: none;
+  border-right: 1px solid;
+}
+
+[dir="rtl"] .border-r {
+  border-right: none;
+  border-left: 1px solid;
+}
+
+/* Arabic font support */
+[dir="rtl"] {
+  font-family: 'Inter', 'Arial', 'Tahoma', sans-serif;
+}
+
+/* RTL-specific spacing adjustments */
+[dir="rtl"] .space-x-3 > * + * {
+  margin-left: 0;
+  margin-right: 0.75rem;
+}
+
+[dir="rtl"] .space-x-4 > * + * {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .space-x-6 > * + * {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+[dir="rtl"] .space-x-7 > * + * {
+  margin-left: 0;
+  margin-right: 1.75rem;
+}
+
+[dir="rtl"] .gap-3 {
+  gap: 0.75rem;
+}
+
+[dir="rtl"] .gap-4 {
+  gap: 1rem;
+}
+
+[dir="rtl"] .gap-6 {
+  gap: 1.5rem;
+}
+
+[dir="rtl"] .gap-8 {
+  gap: 2rem;
+}
+
+[dir="rtl"] .gap-10 {
+  gap: 2.5rem;
+}
+
+[dir="rtl"] .gap-12 {
+  gap: 3rem;
+}
+
+[dir="rtl"] .gap-16 {
+  gap: 4rem;
+}
+
+[dir="rtl"] .gap-20 {
+  gap: 5rem;
+}
+
+[dir="rtl"] .gap-24 {
+  gap: 6rem;
+}

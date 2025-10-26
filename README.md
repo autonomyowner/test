@@ -94,9 +94,9 @@ Le thème utilise un gradient élégant :
 ## 📞 Contact
 
 ### Informations de Contact
-- **WhatsApp** : +213 77 679 79 04
-- **Téléphone** : +213 77 679 79 04
-- **Email** : contact@cuisine-alger.com
+- **WhatsApp** : +213 671 38 91 13
+- **Téléphone** : +213 671 38 91 13
+- **Email** : heithemtedd@gmail.com
 - **Localisation** : Bouzareah, Algérie
 
 ### Zone de Service
@@ -113,8 +113,8 @@ Le thème utilise un gradient élégant :
 Créez un fichier `.env.local` :
 ```env
 NEXT_PUBLIC_SITE_URL=https://cuisine-alger.com
-NEXT_PUBLIC_PHONE_NUMBER=+213776797904
-NEXT_PUBLIC_EMAIL=contact@cuisine-alger.com
+NEXT_PUBLIC_PHONE_NUMBER=+213671389113
+NEXT_PUBLIC_EMAIL=heithemtedd@gmail.com
 ```
 
 ### SEO
