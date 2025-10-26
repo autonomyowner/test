@@ -92,7 +92,7 @@ export const ContactInfo = (): JSX.Element => {
           {t('whatsapp')}
         </h3>
         <p className="mt-2 text-lg font-semibold text-kitchen-black-deep">
-          +213 77 679 79 04
+          +213 671 38 91 13
         </p>
         <p className="mt-2 text-sm text-kitchen-black-soft">
           {t('whatsappDescription')}
@@ -112,7 +112,7 @@ export const ContactInfo = (): JSX.Element => {
             {t('phone')}
           </h3>
           <p className="mt-2 text-lg font-semibold text-kitchen-black-deep">
-            +213 77 679 79 04
+            +213 671 38 91 13
           </p>
         <p className="mt-2 text-sm text-kitchen-black-soft">
           {t('phoneDescription')}

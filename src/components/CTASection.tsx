@@ -56,7 +56,7 @@ export const CTASection = (): JSX.Element => {
               {t('whatsapp')}
             </p>
             <p className="mt-4 text-lg font-semibold text-kitchen-lux-dark-green-800">
-              +213 77 679 79 04
+              +213 671 38 91 13
             </p>
             <button
               onClick={handleWhatsAppClick}
@@ -72,7 +72,7 @@ export const CTASection = (): JSX.Element => {
               {t('phone')}
             </p>
             <p className="mt-4 text-lg font-semibold text-kitchen-lux-dark-green-800">
-              +213 77 679 79 04
+              +213 671 38 91 13
             </p>
             <button
               onClick={handlePhoneClick}
