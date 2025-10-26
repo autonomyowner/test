@@ -84,7 +84,7 @@ export const HeroSection = (): JSX.Element => {
           </p>
 
           <h1 
-            className={`text-4xl font-elegant font-semibold text-kitchen-black-deep sm:text-5xl lg:text-6xl transition-all duration-800 ease-out ${
+            className={`text-4xl font-elegant font-semibold bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent drop-shadow-lg sm:text-5xl lg:text-6xl transition-all duration-800 ease-out ${
               elementsVisible.title
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-12 opacity-0'
