@@ -10,7 +10,6 @@ export const LocationMap = (): JSX.Element => {
 
   const serviceAreas = [
     t('allWilayas'),
-    t('algiersRegion'),
     t('oranRegion'),
     t('constantineRegion'),
     t('annabaRegion'),
