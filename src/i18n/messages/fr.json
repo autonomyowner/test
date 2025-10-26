@@ -219,15 +219,15 @@
     "videoFallback": "Votre navigateur ne supporte pas la lecture vidéo.",
     "stats": {
       "events": {
-        "value": "500+",
-        "label": "Événements"
+        "value": "+3",
+        "label": "location"
       },
       "years": {
-        "value": "5+",
+        "value": "+15",
         "label": "Années d'expérience"
       },
       "team": {
-        "value": "10+",
+        "value": "+3",
         "label": "Experts"
       }
     }

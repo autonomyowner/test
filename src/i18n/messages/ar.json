@@ -220,15 +220,15 @@
     "videoFallback": "متصفحك لا يدعم تشغيل الفيديو.",
     "stats": {
       "events": {
-        "value": "500+",
-        "label": "فعاليات"
+        "value": "+3",
+        "label": "location"
       },
       "years": {
-        "value": "5+",
+        "value": "+15",
         "label": "سنوات خبرة"
       },
       "team": {
-        "value": "10+",
+        "value": "+3",
         "label": "خبراء"
       }
     }
