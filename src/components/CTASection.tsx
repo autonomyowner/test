@@ -22,7 +22,7 @@ export const CTASection = (): JSX.Element => {
   }
 
   const handleEmailClick = (): void => {
-    window.open('mailto:heithemtedd@gmail.com', '_self')
+    window.open('mailto:Allouani.parfumerie@gmail.com', '_self')
   }
 
   return (
@@ -88,7 +88,7 @@ export const CTASection = (): JSX.Element => {
               {t('email')}
             </p>
             <p className="mt-4 text-lg font-semibold text-kitchen-lux-dark-green-800">
-              heithemtedd@gmail.com
+              Allouani.parfumerie@gmail.com
             </p>
             <button
               onClick={handleEmailClick}

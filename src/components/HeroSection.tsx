@@ -68,9 +68,10 @@ export const HeroSection = (): JSX.Element => {
           priority
           className="object-cover"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      <div className="mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-4 py-28 sm:px-6 lg:px-8 lg:py-36">
+      <div className="relative z-10 mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-4 py-28 sm:px-6 lg:px-8 lg:py-36">
         <div className="max-w-3xl space-y-8">
           <p 
             className={`text-xs uppercase tracking-[0.4em] text-kitchen-gold-light/80 transition-all duration-700 ease-out ${

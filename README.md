@@ -96,7 +96,7 @@ Le thème utilise un gradient élégant :
 ### Informations de Contact
 - **WhatsApp** : +213 671 38 91 13
 - **Téléphone** : +213 671 38 91 13
-- **Email** : heithemtedd@gmail.com
+- **Email** : Allouani.parfumerie@gmail.com
 - **Localisation** : Bouzareah, Algérie
 
 ### Zone de Service
@@ -114,7 +114,7 @@ Créez un fichier `.env.local` :
 ```env
 NEXT_PUBLIC_SITE_URL=https://cuisine-alger.com
 NEXT_PUBLIC_PHONE_NUMBER=+213671389113
-NEXT_PUBLIC_EMAIL=heithemtedd@gmail.com
+NEXT_PUBLIC_EMAIL=Allouani.parfumerie@gmail.com
 ```
 
 ### SEO
