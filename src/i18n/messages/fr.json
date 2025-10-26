@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Allouani - Magasins de parfums d'exception à Saida, Ouargla, Oran, Alger",
-    "description": "Allouani dispose de 4 boutiques dans différentes wilayas et vous emmène dans un voyage de parfum et d'élégance. Découvrez notre collection d'essences rares, de musc, d'oud et de mélanges personnalisés avec livraison dans toutes les 58 wilayas.",
-    "keywords": "parfums, musc, oud, mélanges personnalisés, Saida, Ouargla, Oran, Alger, parfumerie, essences rares, consultation parfum, livraison 58 wilayas"
+    "title": "Allouani - Magasins de parfums d'exception à Saida, Ouargla, Oran",
+    "description": "Allouani vous emmène dans un voyage de parfum et d'élégance. Découvrez notre collection d'essences rares, de musc, d'oud et de mélanges personnalisés avec livraison dans toutes les 58 wilayas.",
+          "keywords": "parfums, musc, oud, mélanges personnalisés, Saida, Ouargla, Oran, parfumerie, essences rares, consultation parfum, livraison 58 wilayas"
   },
   "navbar": {
     "home": "Accueil",
@@ -19,7 +19,7 @@
     "description": "Découvrez notre collection d'essences rares, de musc, d'oud et de mélanges personnalisés.",
     "contactButton": "Prendre contact",
     "servicesButton": "Voir nos services",
-    "location": "4 boutiques : Saida, Ouargla, Oran, Alger - Livraison 58 wilayas",
+    "location": "Saida, Ouargla, Oran - Livraison 58 wilayas",
     "whatsappMessage": "Bonjour! Je suis intéressé(e) par vos services de parfumerie et consultation.",
     "features": {
       "customBlends": "Mélanges personnalisés",
@@ -175,7 +175,7 @@
   "about": {
     "subtitle": "À propos",
     "title": "L'équipe Allouani maîtrise l'art de la parfumerie moderne",
-    "description": "Avec 4 boutiques à Saida, Ouargla, Oran et Alger, Allouani conçoit et fabrique des parfums sur mesure avec un savoir-faire artisanal et des matières premières de qualité. Nous transformons votre expérience parfumée grâce à notre expertise et notre attention aux détails.",
+    "description": "Avec des boutiques à Saida, Ouargla et Oran, Allouani conçoit et fabrique des parfums sur mesure avec un savoir-faire artisanal et des matières premières de qualité. Nous transformons votre expérience parfumée grâce à notre expertise et notre attention aux détails.",
     "ourHistory": "Notre histoire",
     "historyDescription": "Depuis plus de cinq ans, nous concevons et fabriquons des parfums sur mesure avec un savoir-faire artisanal et une grande exigence qualitative.",
     "ourPromise": "Notre promesse",
@@ -189,7 +189,7 @@
   },
   "location": {
     "serviceArea": "Zone de service",
-    "serviceDescription": "Nous disposons de 4 boutiques dans différentes wilayas et assurons la livraison dans toutes les 58 wilayas d'Algérie. Contactez-nous pour connaître les frais de livraison selon votre localisation.",
+    "serviceDescription": "Nous disposons de boutiques dans différentes wilayas et assurons la livraison dans toutes les 58 wilayas d'Algérie. Contactez-nous pour connaître les frais de livraison selon votre localisation.",
     "allWilayas": "Livraison dans toutes les 58 wilayas",
     "algiersRegion": "Boutique Alger",
     "oranRegion": "Boutique Oran",
@@ -198,11 +198,11 @@
     "otherWilayas": "Autres wilayas sur demande",
     "travelFees": "Frais de livraison selon la distance",
     "ourLocations": "Nos boutiques",
-    "locationsDescription": "Nous disposons de 4 boutiques pour mieux vous servir",
+    "locationsDescription": "Nous disposons de plusieurs boutiques pour mieux vous servir",
     "bouzareah": "Saida",
     "larbaa": "Ouargla",
     "accessibility": "Accessibilité",
-    "accessibilityDescription": "Accès facile en voiture aux 4 boutiques, possibilité de parking sur demande.",
+    "accessibilityDescription": "Accès facile en voiture aux boutiques, possibilité de parking sur demande.",
     "coverage": "Couverture",
     "coverageDescription": "Livraison dans toutes les 58 wilayas d'Algérie avec frais de livraison selon la distance.",
     "practicalInfo": "Informations pratiques",
