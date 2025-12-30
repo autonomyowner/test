@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0a0a0a;
+  --color-dark-secondary: #141414;
+  --color-dark-tertiary: #1a1a1a;
+  --color-cream: #f5f5dc;
+  --color-cream-light: #faf8f0;
+  --color-gold: #c9a962;
+  --color-gold-light: #d4b978;
+  --color-gold-dark: #a88b4a;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-dark);
+    color: var(--color-cream);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: var(--color-gold);
+  }
+
+  button {
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+    padding: 0.875rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-gold-light);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--color-cream);
+    padding: 0.875rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--color-cream);
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-cream);
+    color: var(--color-dark);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
