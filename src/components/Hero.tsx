@@ -37,12 +37,24 @@ export default function Hero() {
           className="h-px bg-gradient-to-r from-transparent via-[#c9a962] to-transparent mx-auto mb-12"
         />
 
+        {/* Coming Soon Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mb-4"
+        >
+          <span className="inline-block px-4 py-2 border border-[#c9a962]/50 text-[10px] tracking-[0.3em] text-[#c9a962] uppercase">
+            Coming Soon
+          </span>
+        </motion.div>
+
         {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xs tracking-[0.5em] text-[#c9a962] uppercase mb-6"
+          className="text-xs tracking-[0.5em] text-[#f5f5dc]/60 uppercase mb-6"
         >
           The Art of Scent
         </motion.p>
