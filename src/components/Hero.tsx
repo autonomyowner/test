@@ -13,8 +13,8 @@ export default function Hero() {
           className="absolute inset-0"
         >
           <img
-            src="/images/rivorn_style02/1.png"
-            alt="REVORN Collection"
+            src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1600&q=80"
+            alt="ALLOUANI Collection"
             className="w-full h-full object-cover object-center opacity-40"
           />
         </motion.div>
@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xs tracking-[0.5em] text-[#c9a962] uppercase mb-6"
         >
-          Established 2024
+          The Art of Scent
         </motion.p>
 
         {/* Main Title */}
@@ -68,8 +68,8 @@ export default function Hero() {
           className="text-base md:text-lg text-[#f5f5dc]/60 max-w-xl mx-auto mb-12 leading-relaxed"
           style={{ fontFamily: 'Inter, sans-serif' }}
         >
-          Discover our curated collection of premium knit sweaters,
-          crafted for those who appreciate understated luxury.
+          Discover our curated collection of luxury fragrances,
+          crafted for those who appreciate the art of scent.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -133,7 +133,7 @@ export default function Hero() {
         className="absolute left-6 top-1/2 -translate-y-1/2 hidden lg:block"
       >
         <span className="text-[10px] tracking-[0.5em] text-[#f5f5dc]/30 uppercase -rotate-90 block origin-center whitespace-nowrap">
-          Premium Menswear
+          Luxury Fragrances
         </span>
       </motion.div>
 
@@ -144,7 +144,7 @@ export default function Hero() {
         className="absolute right-6 top-1/2 -translate-y-1/2 hidden lg:block"
       >
         <span className="text-[10px] tracking-[0.5em] text-[#f5f5dc]/30 uppercase rotate-90 block origin-center whitespace-nowrap">
-          Old Money Aesthetic
+          Signature Scents
         </span>
       </motion.div>
     </section>

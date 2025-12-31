@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { products, formatPrice } from '../data/products';
+import { products } from '../data/products';
 import type { Product } from '../data/products';
 import { useCart } from '../context/CartContext';
 
@@ -124,19 +124,11 @@ export default function ProductDetail() {
 
             {/* Title */}
             <h1
-              className="text-3xl lg:text-4xl font-light text-[#f5f5dc] mb-4"
+              className="text-3xl lg:text-4xl font-light text-[#f5f5dc] mb-6"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
               {product.name}
             </h1>
-
-            {/* Price */}
-            <p
-              className="text-2xl text-[#c9a962] mb-8"
-              style={{ fontFamily: 'Playfair Display, serif' }}
-            >
-              {formatPrice(product.price, product.currency)}
-            </p>
 
             {/* Description */}
             <p className="text-sm text-[#f5f5dc]/60 leading-relaxed mb-10">
@@ -203,10 +195,10 @@ export default function ProductDetail() {
             <div className="mt-12 pt-10 border-t border-[#f5f5dc]/10">
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  'Premium cotton blend',
-                  'Ribbed cuffs & hem',
-                  'Relaxed fit',
-                  'Machine washable',
+                  'Premium ingredients',
+                  'Long lasting scent',
+                  'Luxury packaging',
+                  'Authentic fragrance',
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 bg-[#c9a962] rounded-full" />
@@ -218,7 +210,7 @@ export default function ProductDetail() {
 
             {/* Instagram CTA */}
             <motion.a
-              href="https://instagram.com/rivorn_style"
+              href="https://www.instagram.com/allouani__parfumerie1/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ x: 4 }}

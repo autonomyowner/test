@@ -27,12 +27,12 @@ export default function ProductGrid() {
             className="text-4xl md:text-5xl lg:text-6xl font-light text-[#f5f5dc] mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            Premium <span className="italic text-[#c9a962]">Knitwear</span>
+            Luxury <span className="italic text-[#c9a962]">Fragrances</span>
           </h2>
 
           <p className="text-sm text-[#f5f5dc]/50 max-w-lg mx-auto tracking-wide leading-relaxed">
-            Each piece is crafted with meticulous attention to detail,
-            using only the finest materials for enduring quality.
+            Each scent is crafted with meticulous attention to detail,
+            using only the finest ingredients for an unforgettable impression.
           </p>
         </motion.div>
 
@@ -52,18 +52,18 @@ export default function ProductGrid() {
           className="mt-20 lg:mt-28 text-center"
         >
           <p className="text-xs tracking-[0.3em] text-[#f5f5dc]/40 uppercase mb-8">
-            All sweaters priced at 4,500 DZD
+            Exclusive Fragrances Collection
           </p>
 
           <motion.a
-            href="https://instagram.com/rivorn_style"
+            href="https://www.instagram.com/allouani__parfumerie1/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="inline-block px-10 py-4 border border-[#f5f5dc]/20 text-[#f5f5dc]/70 text-xs tracking-[0.2em] uppercase hover:border-[#c9a962] hover:text-[#c9a962] transition-all duration-300"
           >
-            Follow @rivorn_style
+            Follow @allouani__parfumerie1
           </motion.a>
         </motion.div>
       </div>

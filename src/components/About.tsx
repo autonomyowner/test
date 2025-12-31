@@ -15,8 +15,8 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="/images/05.jpg"
-                alt="REVORN Style"
+                src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80"
+                alt="ALLOUANI Parfum"
                 className="w-full h-full object-cover"
               />
               {/* Decorative overlay */}
@@ -31,11 +31,11 @@ export default function About() {
               transition={{ delay: 0.5 }}
               className="absolute -right-4 lg:-right-8 bottom-12 bg-[#0a0a0a] border border-[#c9a962]/20 p-6 lg:p-8"
             >
-              <p className="text-3xl lg:text-4xl text-[#c9a962]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                4,500
+              <p className="text-2xl lg:text-3xl text-[#c9a962]" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Premium
               </p>
               <p className="text-xs tracking-[0.2em] text-[#f5f5dc]/60 uppercase mt-2">
-                DZD per piece
+                Quality
               </p>
             </motion.div>
           </motion.div>
@@ -61,28 +61,28 @@ export default function About() {
             >
               Crafted for the
               <br />
-              <span className="italic text-[#c9a962]">Modern Gentleman</span>
+              <span className="italic text-[#c9a962]">Discerning Soul</span>
             </h2>
 
             <div className="space-y-6 text-[#f5f5dc]/60 leading-relaxed">
               <p>
-                At Rivorn Style, we believe that true elegance lies in simplicity.
-                Our collection embodies the timeless "old money" aesthetic &mdash;
-                refined, understated, and effortlessly sophisticated.
+                At ALLOUANI, we believe that true elegance lies in scent.
+                Our collection embodies the essence of luxury &mdash;
+                refined, memorable, and effortlessly sophisticated.
               </p>
               <p>
-                Each sweater in our collection is carefully selected for its
-                premium quality and versatile design. From the boardroom to
-                weekend gatherings, our pieces transition seamlessly.
+                Each fragrance in our collection is carefully crafted with
+                premium ingredients and artisan expertise. From morning rituals to
+                evening occasions, our scents leave a lasting impression.
               </p>
             </div>
 
             {/* Features */}
             <div className="grid grid-cols-2 gap-8 mt-12">
               {[
-                { label: 'Premium Cotton', desc: 'Soft & breathable' },
-                { label: 'Timeless Design', desc: 'Never out of style' },
-                { label: 'Perfect Fit', desc: 'S, M, L, XL' },
+                { label: 'Premium Ingredients', desc: 'Finest essences' },
+                { label: 'Long Lasting', desc: '12+ hour wear' },
+                { label: 'Various Sizes', desc: '30ml, 50ml, 100ml' },
                 { label: 'Fast Delivery', desc: 'Across Algeria' },
               ].map((feature, index) => (
                 <motion.div
@@ -104,7 +104,7 @@ export default function About() {
 
             {/* CTA */}
             <motion.a
-              href="https://instagram.com/rivorn_style"
+              href="https://www.instagram.com/allouani__parfumerie1/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ x: 4 }}

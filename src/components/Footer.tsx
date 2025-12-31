@@ -16,28 +16,28 @@ export default function Footer() {
                 transition={{ duration: 0.3 }}
               >
                 <span className="text-4xl font-light tracking-[0.3em] text-[#f5f5dc]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                  RS
+                  A
                 </span>
                 <span className="block text-[10px] tracking-[0.4em] text-[#f5f5dc]/60 uppercase mt-1">
-                  Rivorn Style
+                  ALLOUANI
                 </span>
               </motion.div>
             </Link>
 
             <p className="text-sm text-[#f5f5dc]/40 mt-6 max-w-sm leading-relaxed">
-              Crafting timeless menswear for the discerning gentleman.
-              Each piece embodies the essence of understated luxury.
+              Crafting exquisite fragrances for the discerning individual.
+              Each scent embodies the essence of understated luxury.
             </p>
 
             {/* Social Link */}
             <motion.a
-              href="https://instagram.com/rivorn_style"
+              href="https://www.instagram.com/allouani__parfumerie1/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ x: 4 }}
               className="inline-flex items-center gap-3 mt-8 text-xs tracking-[0.2em] text-[#c9a962] uppercase"
             >
-              <span>@rivorn_style</span>
+              <span>@allouani__parfumerie1</span>
               <span className="w-8 h-px bg-[#c9a962]" />
             </motion.a>
           </div>
@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://instagram.com/rivorn_style"
+                  href="https://www.instagram.com/allouani__parfumerie1/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-[#f5f5dc]/40 hover:text-[#c9a962] transition-colors duration-300"
@@ -89,17 +89,28 @@ export default function Footer() {
       <div className="border-t border-[#f5f5dc]/5">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[10px] tracking-[0.2em] text-[#f5f5dc]/30 uppercase">
-              &copy; {new Date().getFullYear()} Rivorn Style. All rights reserved.
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-[10px] tracking-[0.2em] text-[#f5f5dc]/30 uppercase">
+                &copy; {new Date().getFullYear()} ALLOUANI.
+              </p>
+              <span className="text-[10px] text-[#f5f5dc]/30">|</span>
+              <a
+                href="https://www.sitedz.store"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] tracking-[0.1em] text-[#f5f5dc]/40 hover:text-[#c9a962] transition-colors duration-300"
+              >
+                Dev by sitedz
+              </a>
+            </div>
 
             <div className="flex items-center gap-6">
               <span className="text-[10px] tracking-[0.2em] text-[#f5f5dc]/30 uppercase">
-                Premium Menswear
+                Luxury Perfumes
               </span>
               <span className="w-1 h-1 rounded-full bg-[#c9a962]/50" />
               <span className="text-[10px] tracking-[0.2em] text-[#f5f5dc]/30 uppercase">
-                Est. 2024
+                Algeria
               </span>
             </div>
           </div>

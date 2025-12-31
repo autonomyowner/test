@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import type { Product } from '../data/products';
-import { formatPrice } from '../data/products';
 import { useCart } from '../context/CartContext';
 
 interface ProductCardProps {
@@ -119,10 +118,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
               {product.name}
             </h3>
             <p className="text-xs text-[#f5f5dc]/50 tracking-wide">
-              {product.colors[0].name}
-            </p>
-            <p className="text-sm text-[#c9a962] tracking-wider" style={{ fontFamily: 'Playfair Display, serif' }}>
-              {formatPrice(product.price, product.currency)}
+              {product.category}
             </p>
           </div>
 

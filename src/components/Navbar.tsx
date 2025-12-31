@@ -55,10 +55,10 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
             >
               <span className="text-3xl lg:text-4xl font-light tracking-[0.3em] text-[#f5f5dc]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                RS
+                A
               </span>
               <span className="text-[10px] tracking-[0.4em] text-[#f5f5dc]/60 uppercase mt-0.5">
-                Rivorn Style
+                ALLOUANI
               </span>
             </motion.div>
           </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6 lg:gap-10 ml-auto">
             {/* Instagram */}
             <a
-              href="https://instagram.com/rivorn_style"
+              href="https://www.instagram.com/allouani__parfumerie1/"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:block text-xs tracking-[0.2em] text-[#f5f5dc]/70 hover:text-[#c9a962] transition-colors duration-300 uppercase"

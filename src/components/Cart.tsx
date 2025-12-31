@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../data/products';
 
 export default function Cart() {
   const { items, isCartOpen, setIsCartOpen, removeItem, updateQuantity, totalPrice, totalItems } = useCart();
@@ -97,9 +96,6 @@ export default function Cart() {
                           <p className="text-xs text-[#f5f5dc]/40 mt-1">
                             {item.color} / {item.size}
                           </p>
-                          <p className="text-sm text-[#c9a962] mt-2" style={{ fontFamily: 'Playfair Display, serif' }}>
-                            {formatPrice(item.price)}
-                          </p>
 
                           {/* Quantity Controls */}
                           <div className="flex items-center gap-4 mt-auto">
@@ -139,16 +135,8 @@ export default function Cart() {
             {/* Footer */}
             {items.length > 0 && (
               <div className="border-t border-[#f5f5dc]/10 px-6 py-6 space-y-4">
-                {/* Subtotal */}
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-[#f5f5dc]/60 tracking-wide">Subtotal</span>
-                  <span className="text-lg text-[#f5f5dc]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                    {formatPrice(totalPrice)}
-                  </span>
-                </div>
-
-                <p className="text-xs text-[#f5f5dc]/40 tracking-wide">
-                  Shipping calculated at checkout
+                <p className="text-xs text-[#f5f5dc]/40 tracking-wide text-center">
+                  Contact us on Instagram for pricing
                 </p>
 
                 {/* Checkout Button */}

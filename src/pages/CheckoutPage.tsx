@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../data/products';
 
 interface FormData {
   firstName: string;
@@ -245,11 +244,11 @@ export default function CheckoutPage() {
                 whileTap={{ scale: 0.99 }}
                 className="w-full py-5 bg-[#c9a962] text-[#0a0a0a] text-xs tracking-[0.2em] uppercase font-medium mt-8"
               >
-                Place Order via Instagram
+                Coming Soon
               </motion.button>
 
               <p className="text-xs text-[#f5f5dc]/40 text-center">
-                You will be redirected to Instagram to confirm your order
+                Online ordering will be available soon
               </p>
             </form>
           </motion.div>
@@ -294,30 +293,16 @@ export default function CheckoutPage() {
                           Qty: {item.quantity}
                         </p>
                       </div>
-                      <p className="text-lg text-[#c9a962]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                        {formatPrice(item.price * item.quantity)}
-                      </p>
                     </div>
                   </li>
                 ))}
               </ul>
 
-              {/* Totals */}
-              <div className="border-t border-[#f5f5dc]/10 pt-6 space-y-4">
-                <div className="flex justify-between text-sm">
-                  <span className="text-[#f5f5dc]/60">Subtotal</span>
-                  <span className="text-[#f5f5dc]">{formatPrice(totalPrice)}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-[#f5f5dc]/60">Shipping</span>
-                  <span className="text-[#f5f5dc]">{formatPrice(shippingCost)}</span>
-                </div>
-                <div className="flex justify-between text-lg pt-4 border-t border-[#f5f5dc]/10">
-                  <span className="text-[#f5f5dc]">Total</span>
-                  <span className="text-[#c9a962]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                    {formatPrice(finalTotal)}
-                  </span>
-                </div>
+              {/* Contact Info */}
+              <div className="border-t border-[#f5f5dc]/10 pt-6">
+                <p className="text-sm text-[#f5f5dc]/60 text-center">
+                  Pricing will be confirmed via Instagram DM
+                </p>
               </div>
 
               {/* Info */}
