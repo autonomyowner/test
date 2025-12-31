@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
 export default function Cart() {
-  const { items, isCartOpen, setIsCartOpen, removeItem, updateQuantity, totalPrice, totalItems } = useCart();
+  const { items, isCartOpen, setIsCartOpen, removeItem, updateQuantity, totalItems } = useCart();
 
   return (
     <AnimatePresence>

@@ -48,7 +48,7 @@ export default function CheckoutPage() {
     localStorage.setItem('revorn_last_order', JSON.stringify(orderData));
 
     // Open Instagram (since user only wants Instagram contact)
-    window.open('https://instagram.com/rivorn_style', '_blank');
+    window.open('https://www.instagram.com/allouani__parfumerie1/', '_blank');
 
     setIsSubmitted(true);
     clearCart();
